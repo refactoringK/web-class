@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img
+      class="my-img"
+      src="https://i.namu.wiki/i/Qya4xTx5ck-j-FxzOp3h6fofdXgCXiN_kPNDH2UE7LbDMPLcmLy3LymxhuY6z_JDM72ziIA_TDc-z7lMXUcWgg.webp"
+      alt=""
+    />
+    <script>
+      let $img = document.querySelector(".my-img");
+
+      $img.addEventListener("click", function () {
+        let newSrc =
+          "https://i.namu.wiki/i/45ad00iM-3ONvtUxfXmr5SF-RkJnlXjUsxg1fb2LSwnXxo3whiO1qAHovKfMqYWZxQBc-v9W5mq0WWfeMmwasQ.webp";
+        this.setAttribute("src", newSrc);
+      });
+    </script>
+  </body>
+</html>

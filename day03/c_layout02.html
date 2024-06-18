@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .header,
+      .footer {
+        height: 100px;
+        background-color: black;
+      }
+
+      .section {
+        height: 500px;
+        background-color: bisque;
+      }
+
+      .header__contents {
+        background-color: blueviolet;
+        height: 70%;
+      }
+
+      .header__nav {
+        height: 30%;
+      }
+
+      .header__nav-list {
+        background-color: cadetblue;
+        display: flex;
+        list-style-type: none;
+        height: 100%;
+        align-items: center;
+      }
+
+      li {
+        color: white;
+        font-weight: bold;
+        margin: 0 10px;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="header">
+        <div class="header__contents">
+          <!-- nav바 말고 로고 등의 다른 컨텐츠가 들어갈 영역 -->
+        </div>
+        <div class="header__nav">
+          <ul class="header__nav-list">
+            <li>
+              <a href="">HOME</a>
+            </li>
+            <li>상품목록</li>
+            <li>상품등록</li>
+            <li>주문내역</li>
+            <li>회원정보</li>
+          </ul>
+        </div>
+      </div>
+      <div class="section"></div>
+      <div class="footer"></div>
+    </div>
+  </body>
+</html>

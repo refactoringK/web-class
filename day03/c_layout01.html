@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .header {
+        background-color: antiquewhite;
+        height: 100px;
+      }
+
+      .section {
+        height: 500px;
+        background-color: brown;
+        display: flex;
+      }
+
+      .footer {
+        height: 100px;
+        background-color: aqua;
+      }
+
+      .aside {
+        background-color: blue;
+        width: 200px;
+        height: 100%;
+      }
+
+      .main {
+        background-color: black;
+        width: calc(100% - 200px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="header"></div>
+      <div class="section">
+        <div class="aside">aside</div>
+        <div class="main">main</div>
+      </div>
+      <div class="footer"></div>
+    </div>
+  </body>
+</html>

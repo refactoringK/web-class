@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      main {
+        background-color: gray;
+        height: 100vh;
+      }
+
+      div {
+        width: 100px;
+        height: 100px;
+        border: 1px solid red;
+        background-color: antiquewhite;
+        margin: 10px auto;
+      }
+
+      @keyframes background {
+        from {
+          background-color: gold;
+        }
+
+        50% {
+          background-color: blue;
+        }
+
+        to {
+          background-color: gold;
+        }
+      }
+
+      .div1 {
+        animation: 3s infinite background;
+      }
+
+      @keyframes test {
+        0% {
+          background-color: red;
+        }
+
+        25% {
+          background-color: rgba(255, 212, 20, 0.5);
+        }
+
+        50% {
+          background-color: rgb(130, 255, 20);
+          border-radius: 50%;
+        }
+
+        75% {
+          background-color: rgba(255, 212, 20, 0.5);
+        }
+
+        100% {
+          background-color: red;
+          transform: rotate(3600deg);
+        }
+      }
+
+      .div2 {
+        animation: test 3s infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- main>div.div${div$}*2 -->
+    <main>
+      <div class="div1">div1</div>
+      <div class="div2">div2</div>
+    </main>
+  </body>
+</html>

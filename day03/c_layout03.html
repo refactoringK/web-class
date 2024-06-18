@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        color: white;
+        font-size: 30px;
+      }
+
+      /* 헤더 스타일 */
+
+      .header__contents {
+        background-color: tomato;
+        text-align: center;
+        height: 50px;
+      }
+
+      .header__nav-ul {
+        background-color: cornflowerblue;
+        display: flex;
+        list-style-type: none;
+      }
+
+      li {
+        margin: 10px;
+      }
+
+      footer {
+        background-color: black;
+        text-align: center;
+      }
+
+      /* 메인 컨텐츠 스타일 */
+      .contents-sec {
+        display: flex;
+        background-color: chocolate;
+      }
+
+      .side-bar {
+        background-color: brown;
+        width: 200px;
+      }
+
+      .contents-main {
+        background-color: gray;
+        width: calc(100% - 200px);
+      }
+
+      .board-list-box,
+      .product-list-box {
+        background-color: blueviolet;
+        margin: 20px auto;
+        width: 500px;
+      }
+
+      .product-item,
+      .board-item {
+        background-color: skyblue;
+      }
+
+      .board-item {
+        width: 120px;
+        padding: 20px 10px;
+        margin: 20px 10px;
+        text-align: center;
+      }
+
+      .product-item {
+        width: 180px;
+        padding: 20px;
+        margin: 20px 10px;
+        text-align: center;
+      }
+
+      .board-item-box,
+      .product-item-box {
+        display: flex;
+        justify-content: center;
+      }
+
+      .product-item-box {
+        flex-wrap: wrap;
+      }
+
+      footer {
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <section class="header__contents">Header</section>
+        <nav>
+          <ul class="header__nav-ul">
+            <li>nav메뉴1</li>
+            <li>nav메뉴2</li>
+            <li>nav메뉴3</li>
+            <li>nav메뉴4</li>
+          </ul>
+        </nav>
+      </header>
+      <section class="contents-sec">
+        <aside class="side-bar">aside</aside>
+        <main class="contents-main">
+          main
+          <section class="board-list-box">
+            section
+            <!-- article.board-item{article}*3 -->
+            <div class="board-item-box">
+              <article class="board-item">article</article>
+              <article class="board-item">article</article>
+              <article class="board-item">article</article>
+            </div>
+          </section>
+          <section class="product-list-box">
+            section
+            <!-- article.product-item{article}*4 -->
+            <div class="product-item-box">
+              <article class="product-item">article</article>
+              <article class="product-item">article</article>
+              <article class="product-item">article</article>
+              <article class="product-item">article</article>
+            </div>
+          </section>
+        </main>
+      </section>
+
+      <footer>footer</footer>
+    </div>
+  </body>
+</html>

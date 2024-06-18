@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        border: 1px solid black;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="box" id="click"></div>
+      <div class="box" id="over"></div>
+      <div class="box" id="out"></div>
+      <div class="box" id="over-out"></div>
+    </main>
+
+    <script>
+      let $boxClick = document.querySelector("#click");
+      let $boxOver = document.querySelector("#over");
+      let $boxOut = document.querySelector("#out");
+      let $boxOverOut = document.querySelector("#over-out");
+
+      function changeBgGreen() {
+        this.style.backgroundColor = "green";
+      }
+
+      $boxClick.addEventListener("click", changeBgGreen);
+
+      $boxOver.addEventListener("mouseover", function () {
+        $boxOver.style.backgroundColor = "red";
+      });
+
+      $boxOut.addEventListener("mouseout", function () {
+        $boxOut.style.backgroundColor = "blue";
+      });
+
+      function changeBgBlue() {
+        $boxOverOut.style.backgroundColor = "blue";
+      }
+
+      $boxOverOut.addEventListener("mouseover", changeBgBlue);
+      $boxOverOut.addEventListener("mouseout", changeBgGreen);
+    </script>
+  </body>
+</html>
